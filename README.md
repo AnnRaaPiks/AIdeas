@@ -43,6 +43,9 @@ AI and other techniques that may be helpful:
 -	Then, feed the spectrograms to an ML framework, specific for an embedded system.
 -	From this ML framework, you get a “command recognizer”.
 -	And this in turn gives you a “command responder” which will handle your own recorded music training session, for this concerned tune.
+
+TFLite for microcontrollers may be useful here. 
+Some type of neural network may be used - like a transformer. But for the fun of it - what will happen if we test even simpler ways like logistic regression? 
   
 The ML solution is not meant to be spread to other than the specific teacher/student pair. It is still “their lesson” with the same material as for an IRL lesson. That should help to avoid immaterial property rights problems which would otherwise occur.
 
@@ -70,4 +73,6 @@ To make the project an open source project would also be one way to go.
 
 ## Acknowledgments
 
-A very good source of inspiration is TinyML, and renowned schools and courses like https://pll.harvard.edu/course/fundamentals-tinyml.
+- A very good source of inspiration is TinyML, and renowned schools and courses like https://pll.harvard.edu/course/fundamentals-tinyml.
+
+- [TF Lite for microcontrollers](https://www.tensorflow.org/lite/microcontrollers)

@@ -25,6 +25,8 @@ The problem part 1) is common for anyone who is learning an instrument. Those ar
 
 To get more people to exercise a musical instrument in a more rewarding way, would give them a chance to grow, to relax, to feel good. This in a next step may do something more: to contribute to our society’s wellbeing. 
 
+Your musical instrument - could well be your voice, in coming versions of the project. However, to better define the scope in a first version, common musical instruments (other than voice) are in focus here. This limits the task in a well-defined way.
+
 
 ## How is it used?
 
@@ -32,10 +34,16 @@ To get more people to exercise a musical instrument in a more rewarding way, wou
 
 If the ML training data comes from an actual teacher, this affects teachers who can sell fewer lessons to some students. On the other hand, teachers can now reach other students than before. Also, the “good spiral” from contented students will make the market grow even more just because of this.
 
+If the ML training data comes built into "Your Musical Instrument Tutor", then again the good spiral from contented students will make the market for music instrument lessons grow more.
+
 
 ## Data sources and AI methods
 
-Data for one implementation of this idea: - Your teacher records the music you are to train. (One can imagine more elaborate other implementations and related data sources. That would complicate this idea unnecessarily for a first version of the idea.)
+Data for one implementation of this idea: - Your teacher may record the music you are to train. (One can imagine more elaborate other implementations and related data sources. That would complicate this idea unnecessarily for a first version of the idea.)
+
+- Note, though: to focus on specific techniques details, for your particular instrument, is likely the best way to get forward for at least a first version of this project. That is: starting from a tune and its notes - focus on merely parts of the tune, where you train for example glissando, legato, or what may be relevant for your particular instrument. - This way to "limit spectrograms" (see below) also enables an easier way to construct training data: "general examples" may be built into "Your Musical Instrument Tutor", not involving a student's actual teacher.
+
+Data may thus also/alternatively be recorded as "short general examples" by anyone, for example the project implementor's own network of musicians. 
 
 AI and other techniques that may be helpful:
 -	From the recorded audio, extract the features that are relevant to us. That would include tone frequency/-ies, tone length/-s, and step by step more as found useful. “Tone pictures” – not too big, but also not too small. 
@@ -47,14 +55,16 @@ AI and other techniques that may be helpful:
 TFLite for microcontrollers may be useful here. 
 Some type of neural network may be used - like a transformer. But for the fun of it - what will happen if we test even simpler ways like logistic regression? 
   
-The ML solution is not meant to be spread to other than the specific teacher/student pair. It is still “their lesson” with the same material as for an IRL lesson. That should help to avoid immaterial property rights problems which would otherwise occur.
+The ML solution is not meant to be spread to other than the specific teacher/student pair. It is still “their lesson” with the same material as for an IRL lesson. That should help to avoid immaterial property rights problems which would otherwise occur. Different legislation may apply in different countries though, so this need be checked and taken into account. - If examples are "general short examples", then there too it need be concluded  whether special consideration is needed for immaterial property rights.
 
 
 ## Challenges
 
 To identify which features to extract, will be the first and big challenge. The way to do this would be to try, and try again. 
 
-This project (in its first version, described above) is not altogether flexible. It requires planning: which tune do I need my teacher to record, before I practice with this solution? The student (and teacher) need be motivated enough to work past this obstacle. The solution need be user friendly enough to encourage them to do this.
+For at least a first version of the project, as discussed above, some "short general examples" focussing on technique details for your particular instrument, should be in focus. This limits the features in a more feasible way, making them possible to define. 
+
+This project (in a possible very first version, described above) is not altogether flexible. It requires planning: which tune do I need my teacher to record, before I practice with this solution? The student (and teacher) need be motivated enough to work past this obstacle. The solution need be user friendly enough to encourage them to do this.
 
 This project also requires some handling by teacher/student, for to train the ML with a certain tune, when it is new to the system. Again, user-friendliness is essential here, for the project.
 

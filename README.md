@@ -34,7 +34,7 @@ Your musical instrument - could well be your voice, in coming versions of the pr
 
 If the ML training data comes from an actual teacher, this affects teachers who can sell fewer lessons to some students. On the other hand, teachers can now reach other students than before. Also, the “good spiral” from contented students will make the market grow even more just because of this.
 
-If the ML training data comes built into "Your Musical Instrument Tutor", then again the good spiral from contented students will make the market for music instrument lessons grow more.
+If the ML training data comes built into "Your Musical Instrument Tutor", then again the good spiral from contented students will make the market for musical instrument lessons grow more.
 
 
 ## Data sources and AI methods
@@ -46,11 +46,11 @@ Data for one implementation of this idea: - Your teacher may record the music yo
 Data may thus also/alternatively be recorded as "short general examples" by anyone, for example the project implementor's own network of musicians. 
 
 AI and other techniques that may be helpful:
--	From the recorded audio, extract the features that are relevant to us. That would include tone frequency/-ies, tone length/-s, and step by step more as found useful. “Tone pictures” – not too big, but also not too small. 
+-	From the recorded audio, extract the features that are relevant. That would include tone frequency/-ies, tone length/-s, and step by step more as found useful. “Tone pictures” of for example a particular technique – not too big picture, but also not too small. 
 -	Convert the features you have extracted, to spectrograms. (Frequency/time data.)
 -	Then, feed the spectrograms to an ML framework, specific for an embedded system.
 -	From this ML framework, you get a “command recognizer”.
--	And this in turn gives you a “command responder” which will handle your own recorded music training session, for this concerned tune.
+-	And this in turn gives you a “command responder” which will handle your own recorded music training session, for this concerned tune or tune part.
 
 TFLite for microcontrollers may be useful here. 
 Some type of neural network may be used - like a transformer. But for the fun of it - what will happen if we test even simpler ways like logistic regression? 
@@ -60,9 +60,9 @@ The ML solution is not meant to be spread to other than the specific teacher/stu
 
 ## Challenges
 
-To identify which features to extract, will be the first and big challenge. The way to do this would be to try, and try again. 
+To identify which features to extract, will be the first and big challenge. The way to do this work would be to try, and try again. 
 
-For at least a first version of the project, as discussed above, some "short general examples" focussing on technique details for your particular instrument, should be in focus. This limits the features in a more feasible way, making them possible to define. 
+For at least a first version of the project, as discussed above, some "short general examples" focussing on technique details for your particular instrument, should be in focus. This limits the features in a more implementation-feasible way, making features possible to define. 
 
 This project (in a possible very first version, described above) is not altogether flexible. It requires planning: which tune do I need my teacher to record, before I practice with this solution? The student (and teacher) need be motivated enough to work past this obstacle. The solution need be user friendly enough to encourage them to do this.
 
@@ -71,12 +71,13 @@ This project also requires some handling by teacher/student, for to train the ML
 (A later version of the project may train on all sorts of recordings – but when it comes to intellectual property right etc, this gets far more complicated than the first solution involving just a teacher and a student.)
 
 As this is not a safety or security focussing problem and solution, it is alright that there are some limitations to it. 
+
 To use the solution, you do need some basic equipment which is still though fairly cheap per se. For example, you may use an Arduino with some simple power source, and a couple of reasonably simple microphones.
 
 
 ## What next?
 
-This project could grow most easily and most natural if some bigger party in some concerned branch of business would be involved. Say, a manufacturer of instruments, or a music business company, or an academic institution. This way already existing parties with a lot of relevant knowledge, and other resources, could enhance the project. 
+This project could grow most easily, and in a most natural way, if some bigger party in some concerned branch of business would be involved. Say, a manufacturer of instruments, or a music business company, or an academic institution. This way already existing parties with a lot of relevant knowledge, and other resources, could enhance the project. 
 
 To make the project an open source project would also be one way to go. 
 
